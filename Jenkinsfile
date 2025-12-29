@@ -16,7 +16,9 @@ pipeline{
                 echo"***** Welcome to ${name}"
                 echo"***** Welcome to ${course}, All the Best ${name}"
             }
-            echo('This is a building stage')
+            
         }
     }
 }
+
+    
