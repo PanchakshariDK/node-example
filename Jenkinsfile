@@ -12,17 +12,16 @@ pipeline{
 
     stages{
         stage('First Stage'){
-            
             environment{
-                Cloud = "GCP"
+                cloud = "GCP"
             }
             steps{
                 echo"*** This is a building stage *****"
                 echo"***** Welcome to ${name}"
                 echo"***** Welcome to ${course}, All the Best ${name}"
-                echo"**** Thanks for chosing ${Cloud}******"
+                echo"**** Thanks for chosing ${cloud}******"
             }
-        stage('First Stage'){
+        stage('Second Stage'){
             steps{
                 echo"*** This is a building stage *****"
                 echo"***** Welcome to ${name}"
