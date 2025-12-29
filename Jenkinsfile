@@ -7,10 +7,22 @@ pipeline{
         // key = value
         course = "Kubernetes"
         name = "Dinesh"
+        cloud = "AWS"
     }
 
     stages{
-        stage('Build'){
+        stage('First Stage'){
+            
+            environment{
+                Cloud = "GCP"
+            }
+            steps{
+                echo"*** This is a building stage *****"
+                echo"***** Welcome to ${name}"
+                echo"***** Welcome to ${course}, All the Best ${name}"
+                echo"**** Thanks for chosing ${Cloud}******"
+            }
+        stage('First Stage'){
             steps{
                 echo"*** This is a building stage *****"
                 echo"***** Welcome to ${name}"
